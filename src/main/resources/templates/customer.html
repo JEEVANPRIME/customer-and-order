@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer</title>
+</head>
+<body>
+    <h1>Welcome customer</h1>
+
+    <form action="/customers" method="post">
+        <label for="name">Enter name</label>
+        <input type="text" id="name" name="name">
+        <button>submit</button>
+    </form>
+    <div th:if="${customer}" th:text="'The customer added is: '+${customer}"></div> 
+</body>
+</html>
